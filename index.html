@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوسف أيمن | مطوّر واجهات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/ico.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-row">
+            <!-- Brand -->
+            <a href="#" class="brand" data-i18n="brand">Yousif</a>
+
+            <!-- Mobile Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <!-- Controls (Inside Navbar) -->
+                <div class="top-controls">
+                    <button id="theme-btn" class="control-btn" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="lang-btn" class="control-btn" aria-label="Switch Language">EN</button>
+                </div>
+
+                <ul class="nav-links" id="primary-nav">
+                    <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav_home">الرئيسية</span></a></li>
+                    <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> <span data-i18n="nav_education">التعليم</span></a></li>
+                    <li><a href="#certificates" class="nav-link"><i class="fas fa-award"></i> <span data-i18n="nav_certificates">الشهادات</span></a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> <span data-i18n="nav_projects">المشاريع</span></a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> <span data-i18n="nav_skills">المهارات</span></a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span data-i18n="nav_contact">تواصل</span></a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Overlay -->
+            <div class="nav-overlay" id="navOverlay"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-card" data-animate>
+            <img src="assets/x.jpg" alt="صورة شخصية" class="profile-img" width="180" height="180">
+            <div class="hero-text">
+                <h1 class="title" data-i18n="name">يوسف أيمن حسن دحلان</h1>
+                <h2 class="subtitle"><span id="typed"></span><span class="cursor">|</span></h2>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/yousif-ayman-a66379361?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/yousif-ayman-dev" target="_blank" class="social"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/yousof.a.d?igsh=YXpvYnUyMmRqOW5t&utm_source=qr" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="assets/cv_yousif.jpg" class="cv-btn" download="cv_yousif.jpg" data-i18n="download_cv">تحميل السيرة الذاتية</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="eduTitle">التعليم</h2>
+            <ul class="timeline" data-animate>
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title" data-i18n="edu1">بكالوريوس أنظمة معلومات</h3>
+                        <span class="item-meta" data-i18n="edu1_meta">جامعة القدس المفتوحة</span>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title" data-i18n="edu2">مقدمة في الأمن السيبراني</h3>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title" data-i18n="edu3">أساسيات الحاسوب والإنترنت</h3>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="item-title" data-i18n="edu4">تصميم تجربة المستخدم (UX)</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="certTitle">الشهادات</h2>
+            <div class="cert-grid">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-i18n="cert_cyber">دبلومة الأمن السيبراني</h3>
+                    <button id="cert-cyber-btn" class="cert-btn" data-i18n="view_cert">عرض الشهادة</button>
+                </div>
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon"><i class="fas fa-globe"></i></div>
+                    <h3 data-i18n="cert_internet">أساسيات الإنترنت والمراسلات</h3>
+                    <button id="cert-internet-btn" class="cert-btn" data-i18n="view_cert">عرض الشهادة</button>
+                </div>
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon"><i class="fas fa-laptop"></i></div>
+                    <h3 data-i18n="cert_computer">أساسيات الحاسوب</h3>
+                    <button id="cert-computer-btn" class="cert-btn" data-i18n="view_cert">عرض الشهادة</button>
+                </div>
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3 data-i18n="cert_terms">أهم المصطلحات في مقدمة الأمن السيبراني</h3>
+                    <button id="cert-terms-btn" class="cert-btn" data-i18n="view_cert">عرض الشهادة</button>
+                </div>
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon"><i class="fas fa-palette"></i></div>
+                    <h3 data-i18n="cert_ux">تصميم تجربة المستخدم</h3>
+                    <button id="cert-ux-btn" class="cert-btn" data-i18n="view_cert">عرض الشهادة</button>
+                </div>
+            </div>
+            <p class="cert-note" data-i18n="cert_note">ملاحظة: لغة الشهادة تتبع لغة الموقع.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projectsTitle">المشاريع</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-animate>
+                    <img src="assets/img5.png" alt="Project 1">
+                    <div class="project-body">
+                        <h3 data-i18n="proj1_title">موقع شخصي</h3>
+                        <p data-i18n="proj1_desc">وصف المشروع...</p>
+                        <div class="project-actions">
+                            <a href="https://yousif-ayman-dev.github.io/yd-portfolio/" target="_blank" class="btn-link" data-i18n="demo">المعاينة</a>
+                            <a href="#" class="btn-link" data-i18n="github">جيت هب</a>
+                            <!-- زر معرض الصور الجديد -->
+                            <a href="#" class="btn-link gallery-btn" data-images='["assets/img4.png", "assets/img3.png", "assets/img2.png", "assets/img1.png"]'>
+                                <i class="fas fa-images"></i> <span data-i18n="gallery">معرض الصور</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skillsTitle">المهارات</h2>
+            <div class="chips" data-animate>
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Responsive Design</span>
+                <span class="chip">Git & GitHub</span>
+                <span class="chip">Cybersecurity Awareness</span>
+                <span class="chip">UX Principles</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contactTitle">تواصل</h2>
+            <div class="contact-card" data-animate>
+                <!-- هام: يجب استبدال YOUR_ID بمعرف النموذج الحقيقي الخاص بك من موقع Formspree لكي يعمل الإرسال -->
+                <form id="contactForm" action="https://formspree.io/f/mzddpyzl" method="POST" class="contact-form">
+                    <div class="field"><i class="fas fa-user"></i><input type="text" id="nameInput" name="name" data-i18n-placeholder="form_name_placeholder"></div>
+                    <span id="nameError" class="error-text"></span>
+
+                    <div class="field"><i class="fas fa-envelope"></i><input type="email" id="emailInput" name="email" data-i18n-placeholder="form_email_placeholder"></div>
+                    <span id="emailError" class="error-text"></span>
+
+                    <div class="field with-tip">
+                        <i class="fab fa-whatsapp"></i><input type="text" id="contactInfo" name="contact" data-i18n-placeholder="form_contact_info_placeholder">
+                        <button type="button" class="info-btn" aria-label="Info"><i class="fas fa-info-circle"></i></button>
+                        <div class="tooltip" data-i18n="contact_info_tooltip">يرجى إدخال بريد صحيح أو رقم واتساب مع رمز الدولة.</div>
+                    </div>
+                    <span id="contactError" class="error-text"></span>
+
+                    <div class="field textarea"><i class="fas fa-comment"></i><textarea id="messageInput" name="message" rows="4" data-i18n-placeholder="form_message_placeholder"></textarea></div>
+                    <span id="messageError" class="error-text"></span>
+
+                    <button type="submit" class="btn-primary" data-i18n="form_submit">إرسال</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> <span data-i18n="footer_name">يوسف أيمن</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Gallery -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-right"></i></div>
+        <img id="lightbox-img" src="" alt="Gallery Image">
+        <div class="lightbox-nav lightbox-next"><i class="fas fa-chevron-left"></i></div>
+    </div>
+
+    <button id="scrollTopBtn" class="scroll-btn"><i class="fas fa-arrow-up"></i></button>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
